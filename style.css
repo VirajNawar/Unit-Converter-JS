@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Inter',sans-serif;
+    font-style: normal;
+    background: #111827;
+    
+}
+
+.container{
+    margin: auto;
+    margin-top: 60px;
+    box-sizing: border-box;
+    width: 550px;
+    min-height: 100vh;
+    background: #1F2937;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    border-radius: 10px;
+}
+
+.input-display{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 285px;
+    background: #6943FF;
+    margin-bottom: 36px;
+    border-radius: 10px 10px 0 0;
+}
+
+.input-display h1{
+    color: #ffff;
+    font-size: 28px;
+    line-height: 38px;
+}
+
+#input-box{
+    background: transparent;
+    width: 117px;
+    height: 83px;
+    border: 2px solid #B295FF;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-weight: 800;
+    font-size: 58px;
+    color: #ffff;
+    text-align: center;
+    padding-top: 4px;
+}
+
+::placeholder{
+    color: #f5f4fa;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input:focus::placeholder {
+    color: transparent;
+  }
+
+  input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+
+#convert-btn{
+
+    width: 117px;
+    height: 42px;
+    box-shadow:  0px 4px 12px #38334d;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    color: #3D3D3D;
+    transition: all 0.2s ease;
+}
+
+#convert-btn:hover{
+   
+    cursor: pointer;
+    transform: scale(1.03);
+    border: 2px solid #ffff;
+    color: #ffff;
+    background: transparent;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; */
+}
+
+
+
+/* result display */
+#render-units{
+    display: flex;
+    visibility: hidden;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.diplay-box{
+    
+    width: 500px;
+    height: 108.57px;
+    background: #273549;
+    color: #FFFF;
+    text-align: center;
+    padding-top: 8px;
+    margin-bottom: 23.43px;
+    border-radius: 5px;
+    box-shadow:  0px 4px 12px #242424;
+    line-height: 20px;
+}
+
+.unit-heading{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #CCC1FF;
+}
